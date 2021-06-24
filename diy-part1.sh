@@ -15,3 +15,12 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+echo '修改机器名称'
+sed -i 's/OpenWrt/G-DOCK/g' package/base-files/files/bin/config_generate
+
+echo '修改默认主题'
+sed -i 's/config internal themes/config internal themes\n    option Argon  \"\/luci-static\/argon\"/g' feeds/luci/modules/luci-base/root/etc/config/luci
+
+echo '修改wifi名称'
+sed -i 's/OpenWrt/PandoreBox/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
