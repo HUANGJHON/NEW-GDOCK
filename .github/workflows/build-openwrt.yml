@@ -20,8 +20,8 @@ on:
         default: 'true'
 
 env:
-  REPO_URL: https://github.com/Boos4721/lede.git
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/Boos4721/lede
+  REPO_BRANCH: develop
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
