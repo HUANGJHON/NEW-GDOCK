@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/R619AC-OpenWrt/lede
+  REPO_URL: https://github.com/Boos4721/lede
   REPO_BRANCH: test
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
